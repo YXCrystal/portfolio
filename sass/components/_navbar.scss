@@ -1,0 +1,13 @@
+.navbar {
+	color: white;
+	padding: 2rem;
+	font-size: $small-font-size;
+
+	&_links {
+		float: right;
+	}
+
+	&_link {
+		display: inline;
+	}
+}

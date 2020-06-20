@@ -14,15 +14,52 @@ body {
           box-sizing: border-box;
 }
 
+body {
+  font-family: Raleway, san-serif;
+}
+
+.primary-heading {
+  font-size: 8rem;
+  color: white;
+}
+
 .header {
-  background-color: pink;
-  height: 95vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 175, 135, 0.7)), to(rgba(253, 112, 128, 0.7))), url(../images/laptop.jpg);
+  background-image: linear-gradient(to right, rgba(255, 175, 135, 0.7), rgba(253, 112, 128, 0.7)), url(../images/laptop.jpg);
+  background-position: 0 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 2.5rem;
+  position: relative;
+}
+
+.header_logo-box {
+  position: relative;
+  padding-left: 5rem;
+  padding-top: 2rem;
+}
+
+.header_logo {
+  position: absolute;
+  width: 8rem;
+}
+
+.header_logo:hover {
+  cursor: pointer;
+}
+
+.header_text-box {
+  position: absolute;
+  right: 10rem;
+  top: 25rem;
 }
 
 .navbar {
   color: white;
-  padding: 2rem;
+  padding: 2rem 5rem;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 .navbar_links {
@@ -31,5 +68,21 @@ body {
 
 .navbar_link {
   display: inline;
+}
+
+.navbar_link a,
+.navbar_link a:visited {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navbar_link a:hover {
+  color: #fd7080;
+}
+
+.navbar_link:not(:last-child) {
+  margin-right: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

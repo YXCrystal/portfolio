@@ -1,4 +1,35 @@
 .header {
-	background-color: pink;
-	height: 95vh;
+	background-image: linear-gradient(
+			to right,
+			rgba($light-peach, 0.7),
+			rgba($dark-pink, 0.7)
+		),
+		url(../images/laptop.jpg);
+	background-position: 0 30%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 75vh;
+	margin: 2.5rem;
+	position: relative;
+
+	&_logo-box {
+		position: relative;
+		padding-left: 5rem;
+		padding-top: 2rem;
+	}
+
+	&_logo {
+		position: absolute;
+		width: 8rem;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&_text-box {
+		position: absolute;
+		right: 10rem;
+		top: 25rem;
+	}
 }

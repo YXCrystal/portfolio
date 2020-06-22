@@ -28,8 +28,31 @@
 	}
 
 	&_text-box {
+		color: white;
 		position: absolute;
-		right: 10rem;
-		top: 25rem;
+		right: 18rem;
+		top: 20rem;
+		text-transform: uppercase;
+	}
+
+	&_primary {
+		animation: moveInRight 1s ease-out;
+	}
+
+	&_secondary {
+		overflow: hidden;
+		white-space: nowrap;
+		margin: 0 auto;
+		letter-spacing: 0.5rem;
+		float: right;
+		animation-delay: 3s;
+		animation: typing 3.5s steps(40, end);
+	}
+
+	&_line {
+		outline: none;
+		transform: translateY(5rem);
+		width: 100%;
+		border: 2px solid white;
 	}
 }

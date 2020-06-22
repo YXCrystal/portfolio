@@ -1,0 +1,31 @@
+.btn {
+	&,
+	&:visited,
+	&:active {
+		text-decoration: none;
+		outline: none;
+		text-transform: uppercase;
+		padding: 1.5rem 2.5rem;
+		font-size: $font-size-default;
+		border-radius: 0.5rem;
+		display: inline-block;
+		position: absolute;
+	}
+
+	&--pink {
+		background-color: $dark-pink;
+		color: white;
+		font-weight: 700;
+		letter-spacing: 0.25rem;
+
+		&:hover {
+			transform: translateY(-0.5rem);
+			box-shadow: 0 1rem 1.5rem rgba(black, 0.2);
+		}
+
+		&:active {
+			transform: translateY(0rem);
+			box-shadow: 0 0.5rem 1rem rgba(black, 0.4);
+		}
+	}
+}

@@ -46,7 +46,7 @@
 		letter-spacing: 0.5rem;
 		float: right;
 		border-right: 3px solid white;
-		animation: typing 3.5s steps(40, end) 1s, blink-caret 0.75s step-end infinite;
+		animation: typing 3s steps(40, end) 1s, blink-caret 0.75s step-end infinite;
 		animation-fill-mode: backwards;
 	}
 
@@ -55,7 +55,15 @@
 		transform: translateY(5rem);
 		width: 100%;
 		border: 2px solid white;
-		animation: moveInUp 1s ease-out 4.5s;
+		animation: moveInUp 1s ease-out 4s;
+		animation-fill-mode: backwards;
+	}
+
+	&_btn {
+		margin-top: 8rem;
+		margin-left: 15rem;
+		transition: all 0.4s;
+		animation: moveInUpBtn 1s ease-out 4s;
 		animation-fill-mode: backwards;
 	}
 }

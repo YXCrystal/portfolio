@@ -72,32 +72,6 @@
   }
 }
 
-@-webkit-keyframes moveInRightLine {
-  0% {
-    -webkit-transform: translate(40rem, 5rem);
-            transform: translate(40rem, 5rem);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translate(0rem, 5rem);
-            transform: translate(0rem, 5rem);
-    opacity: 1;
-  }
-}
-
-@keyframes moveInRightLine {
-  0% {
-    -webkit-transform: translate(40rem, 5rem);
-            transform: translate(40rem, 5rem);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translate(0rem, 5rem);
-            transform: translate(0rem, 5rem);
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes moveInUp {
   0% {
     -webkit-transform: translate(0rem, 6rem);
@@ -120,6 +94,32 @@
   100% {
     -webkit-transform: translate(0rem, 5rem);
             transform: translate(0rem, 5rem);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes moveInUpBtn {
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInUpBtn {
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
     opacity: 1;
   }
 }
@@ -198,8 +198,8 @@ body {
   letter-spacing: 0.5rem;
   float: right;
   border-right: 3px solid white;
-  -webkit-animation: typing 3.5s steps(40, end) 1s, blink-caret 0.75s step-end infinite;
-          animation: typing 3.5s steps(40, end) 1s, blink-caret 0.75s step-end infinite;
+  -webkit-animation: typing 3s steps(40, end) 1s, blink-caret 0.75s step-end infinite;
+          animation: typing 3s steps(40, end) 1s, blink-caret 0.75s step-end infinite;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -210,8 +210,19 @@ body {
           transform: translateY(5rem);
   width: 100%;
   border: 2px solid white;
-  -webkit-animation: moveInUp 1s ease-out 4.5s;
-          animation: moveInUp 1s ease-out 4.5s;
+  -webkit-animation: moveInUp 1s ease-out 4s;
+          animation: moveInUp 1s ease-out 4s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.header_btn {
+  margin-top: 8rem;
+  margin-left: 15rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-animation: moveInUpBtn 1s ease-out 4s;
+          animation: moveInUpBtn 1s ease-out 4s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -245,5 +256,37 @@ body {
 
 .navbar_link:not(:last-child) {
   margin-right: 2rem;
+}
+
+.btn, .btn:visited, .btn:active {
+  text-decoration: none;
+  outline: none;
+  text-transform: uppercase;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  position: absolute;
+}
+
+.btn--pink {
+  background-color: #fd7080;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+}
+
+.btn--pink:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+  -webkit-box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--pink:active {
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
 /*# sourceMappingURL=main.css.map */

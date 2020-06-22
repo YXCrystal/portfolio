@@ -39,7 +39,7 @@
     width: 0;
   }
   100% {
-    width: 100%;
+    width: 83%;
     float: right;
   }
 }
@@ -49,8 +49,78 @@
     width: 0;
   }
   100% {
-    width: 100%;
+    width: 83%;
     float: right;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+@keyframes blink-caret {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+@-webkit-keyframes moveInRightLine {
+  0% {
+    -webkit-transform: translate(40rem, 5rem);
+            transform: translate(40rem, 5rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0rem, 5rem);
+            transform: translate(0rem, 5rem);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInRightLine {
+  0% {
+    -webkit-transform: translate(40rem, 5rem);
+            transform: translate(40rem, 5rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0rem, 5rem);
+            transform: translate(0rem, 5rem);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes moveInUp {
+  0% {
+    -webkit-transform: translate(0rem, 6rem);
+            transform: translate(0rem, 6rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0rem, 5rem);
+            transform: translate(0rem, 5rem);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInUp {
+  0% {
+    -webkit-transform: translate(0rem, 6rem);
+            transform: translate(0rem, 6rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0rem, 5rem);
+            transform: translate(0rem, 5rem);
+    opacity: 1;
   }
 }
 
@@ -127,10 +197,11 @@ body {
   margin: 0 auto;
   letter-spacing: 0.5rem;
   float: right;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-  -webkit-animation: typing 3.5s steps(40, end);
-          animation: typing 3.5s steps(40, end);
+  border-right: 3px solid white;
+  -webkit-animation: typing 3.5s steps(40, end) 1s, blink-caret 0.75s step-end infinite;
+          animation: typing 3.5s steps(40, end) 1s, blink-caret 0.75s step-end infinite;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .header_line {
@@ -139,6 +210,10 @@ body {
           transform: translateY(5rem);
   width: 100%;
   border: 2px solid white;
+  -webkit-animation: moveInUp 1s ease-out 4.5s;
+          animation: moveInUp 1s ease-out 4.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .navbar {

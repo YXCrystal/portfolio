@@ -20,7 +20,40 @@
 	}
 
 	100% {
-		width: 100%;
+		width: 83%;
 		float: right;
+	}
+}
+
+@keyframes blink-caret {
+	0% {
+		border-color: transparent;
+	}
+	50% {
+		border-color: white;
+	}
+}
+
+@keyframes moveInRightLine {
+	0% {
+		transform: translate(40rem, 5rem);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0rem, 5rem);
+		opacity: 1;
+	}
+}
+
+@keyframes moveInUp {
+	0% {
+		transform: translate(0rem, 6rem);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0rem, 5rem);
+		opacity: 1;
 	}
 }

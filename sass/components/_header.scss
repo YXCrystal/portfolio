@@ -8,17 +8,18 @@
 	background-position: 0 30%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 75vh;
+	height: 85vh;
 	margin: 2.5rem;
 	position: relative;
 
-	&_logo-box {
+	&__logo-box {
 		position: relative;
+
 		padding-left: 5rem;
 		padding-top: 2rem;
 	}
 
-	&_logo {
+	&__logo {
 		position: absolute;
 		width: 8rem;
 
@@ -27,7 +28,7 @@
 		}
 	}
 
-	&_text-box {
+	&__text-box {
 		color: white;
 		position: absolute;
 		right: 18rem;
@@ -35,11 +36,11 @@
 		text-transform: uppercase;
 	}
 
-	&_primary {
+	&__primary {
 		animation: moveInRight 1s ease-out;
 	}
 
-	&_secondary {
+	&__secondary {
 		overflow: hidden;
 		white-space: nowrap;
 		margin: 0 auto;
@@ -50,7 +51,7 @@
 		animation-fill-mode: backwards;
 	}
 
-	&_line {
+	&__line {
 		outline: none;
 		transform: translateY(5rem);
 		width: 100%;
@@ -59,7 +60,7 @@
 		animation-fill-mode: backwards;
 	}
 
-	&_btn {
+	&__btn {
 		margin-top: 8rem;
 		margin-left: 15rem;
 		transition: all 0.4s;

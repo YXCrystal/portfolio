@@ -153,7 +153,17 @@ body {
 }
 
 .title-heading {
+  display: block;
   font-size: 4rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffaf87), to(#fd7080));
+  background-image: linear-gradient(to right, #ffaf87, #fd7080);
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .paragraph {
@@ -162,6 +172,10 @@ body {
 
 .margin-bottom-small {
   margin-bottom: 1rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 3rem;
 }
 
 .header {
@@ -230,13 +244,9 @@ body {
 
 .header__btn {
   margin-top: 8rem;
-  margin-left: 15rem;
+  margin-left: 16rem;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  -webkit-animation: moveInUpBtn 1s ease-out 4s;
-          animation: moveInUpBtn 1s ease-out 4s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
 }
 
 .navbar {
@@ -303,15 +313,18 @@ body {
 }
 
 .about {
-  background-color: pink;
-  padding: 15rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5))), url(../images/notebook.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5)), url(../images/notebook.jpg);
+  background-size: cover;
+  background-position: top;
+  padding: 25rem;
   text-align: center;
   margin: 2.5rem;
   margin-top: -3rem;
 }
 
 .about__information {
-  width: 50rem;
+  width: 53rem;
   margin: 0 auto;
 }
 
@@ -334,7 +347,7 @@ body {
 }
 
 .about__text {
-  color: black;
+  color: #4d4d4d;
   width: 100%;
 }
 

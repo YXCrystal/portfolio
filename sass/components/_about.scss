@@ -1,12 +1,15 @@
 .about {
-	background-color: pink;
-	padding: 15rem;
+	background-image: linear-gradient(rgba(white, 0.5)),
+		url(../images/notebook.jpg);
+	background-size: cover;
+	background-position: top;
+	padding: 25rem;
 	text-align: center;
 	margin: 2.5rem;
 	margin-top: -3rem;
 
 	&__information {
-		width: 50rem;
+		width: 53rem;
 		margin: 0 auto;
 	}
 
@@ -28,7 +31,7 @@
 	}
 
 	&__text {
-		color: black;
+		color: $dark-grey;
 		width: 100%;
 	}
 }

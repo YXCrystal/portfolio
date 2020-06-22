@@ -3,14 +3,17 @@
 		url(../images/notebook.jpg);
 	background-size: cover;
 	background-position: top;
-	padding: 25rem;
+	padding: 20rem;
+	padding-bottom: 30rem;
 	text-align: center;
 	margin: 2.5rem;
 	margin-top: -3rem;
 
 	&__information {
-		width: 53rem;
+		width: 65rem;
 		margin: 0 auto;
+		background-color: rgba(white, 0.3);
+		padding: 2rem 8rem;
 	}
 
 	&__shape {

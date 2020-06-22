@@ -247,6 +247,10 @@ body {
   margin-left: 16rem;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  -webkit-animation: moveInUpBtn 1s ease-out 4s;
+          animation: moveInUpBtn 1s ease-out 4s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .navbar {
@@ -317,15 +321,18 @@ body {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5)), url(../images/notebook.jpg);
   background-size: cover;
   background-position: top;
-  padding: 25rem;
+  padding: 20rem;
+  padding-bottom: 30rem;
   text-align: center;
   margin: 2.5rem;
   margin-top: -3rem;
 }
 
 .about__information {
-  width: 53rem;
+  width: 65rem;
   margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 2rem 8rem;
 }
 
 .about__shape {

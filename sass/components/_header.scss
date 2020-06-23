@@ -68,3 +68,48 @@
 		animation-fill-mode: backwards;
 	}
 }
+
+@media only screen and (max-width: $large-screen) {
+	.header {
+		&__text-box {
+			display: inline-block;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+@media only screen and (max-width: $small-screen) {
+	.header {
+		&__text-box {
+			margin: 0 auto;
+		}
+
+		&__primary {
+			font-size: 5.5rem;
+			animation: moveInRight 1s ease-out;
+			text-align: center;
+		}
+
+		&__secondary {
+			animation: none;
+			float: none;
+			border-right: none;
+			animation: moveInLeft 1s ease-out;
+			letter-spacing: 0.25rem;
+		}
+
+		&__line {
+			display: none;
+		}
+
+		&__btn {
+			margin: 0 auto;
+			margin-top: 1.5rem;
+			left: 25%;
+			animation: moveInUpBtn 1s ease-out 1s;
+			animation-fill-mode: backwards;
+		}
+	}
+}

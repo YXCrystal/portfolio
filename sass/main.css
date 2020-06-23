@@ -162,8 +162,7 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  display: block;
 }
 
 .paragraph {
@@ -321,7 +320,7 @@ body {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5)), url(../images/notebook.jpg);
   background-size: cover;
   background-position: top;
-  padding: 20rem;
+  padding: 20rem 0;
   padding-bottom: 30rem;
   text-align: center;
   margin: 2.5rem;
@@ -329,7 +328,7 @@ body {
 }
 
 .about__information {
-  width: 65rem;
+  width: 68rem;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.3);
   padding: 2rem 8rem;
@@ -356,6 +355,29 @@ body {
 .about__text {
   color: #4d4d4d;
   width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .about {
+    padding: 20rem 10rem;
+  }
+  .about__information {
+    width: 80%;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    padding: 20rem 5rem;
+  }
+  .about__information {
+    width: 100%;
+    padding: 2rem;
+  }
+  .about__shape {
+    display: none;
+  }
 }
 
 .row {

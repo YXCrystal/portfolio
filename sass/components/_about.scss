@@ -3,14 +3,14 @@
 		url(../images/notebook.jpg);
 	background-size: cover;
 	background-position: top;
-	padding: 20rem;
+	padding: 20rem 0;
 	padding-bottom: 30rem;
 	text-align: center;
 	margin: 2.5rem;
 	margin-top: -3rem;
 
 	&__information {
-		width: 65rem;
+		width: 68rem;
 		margin: 0 auto;
 		background-color: rgba(white, 0.3);
 		padding: 2rem 8rem;
@@ -36,5 +36,31 @@
 	&__text {
 		color: $dark-grey;
 		width: 100%;
+	}
+}
+
+@media only screen and (max-width: $large-screen) {
+	.about {
+		padding: 20rem 10rem;
+
+		&__information {
+			width: 80%;
+			padding: 3rem;
+		}
+	}
+}
+
+@media only screen and (max-width: $medium-screen) {
+	.about {
+		padding: 20rem 5rem;
+
+		&__information {
+			width: 100%;
+			padding: 2rem;
+		}
+
+		&__shape {
+			display: none;
+		}
 	}
 }

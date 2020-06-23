@@ -20,7 +20,7 @@ body {
 	-webkit-background-clip: text; // Background gets clip to where the text is
 	color: transparent; // Change text to transparent so we see the clip background
 	letter-spacing: 2px;
-	transition: all 0.2s;
+	display: block;
 }
 
 .paragraph {

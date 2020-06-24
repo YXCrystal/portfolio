@@ -5,12 +5,14 @@
 	border-radius: 0.5rem;
 	position: absolute;
 
-	&--photoshop {
+	&--photoshop,
+	&--illustrator {
 		visibility: hidden;
 		opacity: 0;
 		transform: translate(-8rem, -19rem) scale(0.9);
 		transition: all 0.5s;
 		transform-origin: bottom;
+		z-index: 5;
 
 		&::after {
 			content: "";
@@ -27,6 +29,18 @@
 
 	&:hover {
 		.tooltip--photoshop {
+			visibility: visible;
+			opacity: 1;
+			transform: translate(-8rem, -19rem) scale(1.1);
+		}
+	}
+}
+
+.illustrator {
+	display: inline-block;
+
+	&:hover {
+		.tooltip--illustrator {
 			visibility: visible;
 			opacity: 1;
 			transform: translate(-8rem, -19rem) scale(1.1);

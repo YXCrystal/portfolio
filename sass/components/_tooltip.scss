@@ -1,0 +1,33 @@
+.tooltip {
+	background-color: white;
+	width: 28rem;
+	padding: 2rem;
+	border-radius: 0.5rem;
+	position: absolute;
+
+	&--photoshop {
+		// visibility: hidden;
+		// opacity: 0;
+		transform: translate(-8rem, -10rem) scale(0.9);
+		transition: all 0.5s;
+
+		&::after {
+			content: "";
+			width: 2rem;
+			height: 2rem;
+			background-color: black;
+		}
+	}
+}
+
+.photoshop {
+	display: inline-block;
+
+	&:hover {
+		.tooltip--photoshop {
+			visibility: visible;
+			opacity: 1;
+			transform: translate(-8rem, -10rem) scale(1.1);
+		}
+	}
+}

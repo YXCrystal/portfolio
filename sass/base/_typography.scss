@@ -13,16 +13,12 @@ body {
 }
 
 .tertiary-heading {
-	font-size: $font-size-default;
+	font-size: $font-size-small;
 	letter-spacing: 0.2rem;
 	text-transform: uppercase;
 }
 
-.title-heading {
-	display: block;
-	font-size: $font-size-medium;
-	text-transform: uppercase;
-
+.color-heading {
 	background-image: linear-gradient(to right, $light-peach, $dark-pink);
 	display: inline-block; // Only occupies the space of the content
 	background-clip: text;
@@ -30,6 +26,12 @@ body {
 	color: transparent; // Change text to transparent so we see the clip background
 	letter-spacing: 2px;
 	display: block;
+}
+
+.title-heading {
+	display: block;
+	font-size: $font-size-medium;
+	text-transform: uppercase;
 }
 
 .paragraph {

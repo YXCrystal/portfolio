@@ -6,16 +6,18 @@
 	position: absolute;
 
 	&--photoshop {
-		// visibility: hidden;
-		// opacity: 0;
-		transform: translate(-8rem, -10rem) scale(0.9);
+		visibility: hidden;
+		opacity: 0;
+		transform: translate(-8rem, -19rem) scale(0.9);
 		transition: all 0.5s;
+		transform-origin: bottom;
 
 		&::after {
 			content: "";
-			width: 2rem;
-			height: 2rem;
-			background-color: black;
+			display: inline-block;
+			transform: translate(-2rem, 5rem);
+			border: 1.5rem solid transparent;
+			border-top-color: white;
 		}
 	}
 }
@@ -27,7 +29,7 @@
 		.tooltip--photoshop {
 			visibility: visible;
 			opacity: 1;
-			transform: translate(-8rem, -10rem) scale(1.1);
+			transform: translate(-8rem, -19rem) scale(1.1);
 		}
 	}
 }

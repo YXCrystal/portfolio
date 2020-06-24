@@ -1,0 +1,30 @@
+.skills {
+	&__box {
+		background-image: linear-gradient(
+			to right,
+			rgba($light-peach, 0.8),
+			rgba($dark-pink, 0.8)
+		);
+		padding: 2rem;
+		margin-top: 16rem;
+		height: 30rem;
+		width: 30rem;
+		border-radius: 0.5rem;
+	}
+
+	&__icons {
+		margin-top: 2rem;
+	}
+}
+
+.icons {
+	width: 6rem;
+
+	&__design {
+		width: 7rem;
+	}
+
+	&__front {
+		width: 6rem;
+	}
+}

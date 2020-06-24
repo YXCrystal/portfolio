@@ -4,15 +4,24 @@ body {
 
 .primary-heading {
 	font-size: $font-size-large;
+	text-transform: uppercase;
 }
 
 .secondary-heading {
 	font-size: $font-size-small;
+	text-transform: uppercase;
+}
+
+.tertiary-heading {
+	font-size: $font-size-default;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
 }
 
 .title-heading {
 	display: block;
 	font-size: $font-size-medium;
+	text-transform: uppercase;
 
 	background-image: linear-gradient(to right, $light-peach, $dark-pink);
 	display: inline-block; // Only occupies the space of the content
@@ -25,4 +34,12 @@ body {
 
 .paragraph {
 	font-size: $font-size-default;
+}
+
+.skills-heading {
+	font-size: $font-size-small;
+	color: white;
+	margin-top: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.25rem;
 }

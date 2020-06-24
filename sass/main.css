@@ -182,15 +182,24 @@ body {
 
 .primary-heading {
   font-size: 8rem;
+  text-transform: uppercase;
 }
 
 .secondary-heading {
   font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.tertiary-heading {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
 }
 
 .title-heading {
   display: block;
   font-size: 4rem;
+  text-transform: uppercase;
   background-image: -webkit-gradient(linear, left top, right top, from(#ffaf87), to(#fd7080));
   background-image: linear-gradient(to right, #ffaf87, #fd7080);
   display: inline-block;
@@ -203,6 +212,14 @@ body {
 
 .paragraph {
   font-size: 1.6rem;
+}
+
+.skills-heading {
+  font-size: 2rem;
+  color: white;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
 }
 
 .margin-bottom-small {
@@ -400,7 +417,7 @@ body {
   background-size: cover;
   background-position: top;
   padding: 20rem 0;
-  padding-bottom: 30rem;
+  padding-bottom: 50rem;
   text-align: center;
   margin: 2.5rem;
   margin-top: -3rem;
@@ -458,6 +475,32 @@ body {
   .about__shape {
     display: none;
   }
+}
+
+.skills__box {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 175, 135, 0.8)), to(rgba(253, 112, 128, 0.8)));
+  background-image: linear-gradient(to right, rgba(255, 175, 135, 0.8), rgba(253, 112, 128, 0.8));
+  padding: 2rem;
+  margin-top: 16rem;
+  height: 30rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+}
+
+.skills__icons {
+  margin-top: 2rem;
+}
+
+.icons {
+  width: 6rem;
+}
+
+.icons__design {
+  width: 7rem;
+}
+
+.icons__front {
+  width: 6rem;
 }
 
 .row {

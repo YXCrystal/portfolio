@@ -7,20 +7,11 @@
 
 	&--photoshop,
 	&--illustrator {
-		visibility: hidden;
-		opacity: 0;
-		transform: translate(-8rem, -19rem) scale(0.9);
-		transition: all 0.5s;
-		transform-origin: bottom;
-		z-index: 5;
+		@include tooltip(-10.5rem, -20.5rem);
+	}
 
-		&::after {
-			content: "";
-			display: inline-block;
-			transform: translate(-2rem, 5rem);
-			border: 1.5rem solid transparent;
-			border-top-color: white;
-		}
+	&--gimp {
+		@include tooltip(-11rem, -18rem);
 	}
 }
 
@@ -29,9 +20,7 @@
 
 	&:hover {
 		.tooltip--photoshop {
-			visibility: visible;
-			opacity: 1;
-			transform: translate(-8rem, -19rem) scale(1.1);
+			@include tooltip-animation(-10.5rem, -20.5rem);
 		}
 	}
 }
@@ -41,9 +30,17 @@
 
 	&:hover {
 		.tooltip--illustrator {
-			visibility: visible;
-			opacity: 1;
-			transform: translate(-8rem, -19rem) scale(1.1);
+			@include tooltip-animation(-11rem, -20.5rem);
+		}
+	}
+}
+
+.gimp {
+	display: inline-block;
+
+	&:hover {
+		.tooltip--gimp {
+			@include tooltip-animation(-11rem, -18rem);
 		}
 	}
 }

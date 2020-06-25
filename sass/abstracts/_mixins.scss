@@ -5,3 +5,26 @@
 		clear: both;
 	}
 }
+
+@mixin tooltip($x-value, $y-value) {
+	visibility: hidden;
+	opacity: 0;
+	transform: translate($x-value, $y-value) scale(0.9);
+	transition: all 0.5s;
+	transform-origin: bottom;
+	z-index: 5;
+
+	&::after {
+		content: "";
+		display: inline-block;
+		transform: translate(0rem, 5rem);
+		border: 1.5rem solid transparent;
+		border-top-color: white;
+	}
+}
+
+@mixin tooltip-animation($x-value, $y-value) {
+	visibility: visible;
+	opacity: 1;
+	transform: translate($x-value, $y-value) scale(1.1);
+}

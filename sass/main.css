@@ -537,7 +537,7 @@ body {
   position: absolute;
 }
 
-.tooltip--photoshop, .tooltip--illustrator {
+.tooltip--photoshop, .tooltip--illustrator, .tooltip--express {
   visibility: hidden;
   opacity: 0;
   -webkit-transform: translate(-10.5rem, -19rem) scale(0.9);
@@ -549,7 +549,7 @@ body {
   z-index: 5;
 }
 
-.tooltip--photoshop::after, .tooltip--illustrator::after {
+.tooltip--photoshop::after, .tooltip--illustrator::after, .tooltip--express::after {
   content: "";
   display: inline-block;
   -webkit-transform: translate(0rem, 3rem);
@@ -579,7 +579,7 @@ body {
   border-top-color: white;
 }
 
-.tooltip--html, .tooltip--bootstrap, .tooltip--jquery {
+.tooltip--html, .tooltip--bootstrap, .tooltip--jquery, .tooltip--node {
   visibility: hidden;
   opacity: 0;
   -webkit-transform: translate(-11rem, -19rem) scale(0.9);
@@ -591,7 +591,7 @@ body {
   z-index: 5;
 }
 
-.tooltip--html::after, .tooltip--bootstrap::after, .tooltip--jquery::after {
+.tooltip--html::after, .tooltip--bootstrap::after, .tooltip--jquery::after, .tooltip--node::after {
   content: "";
   display: inline-block;
   -webkit-transform: translate(0rem, 3rem);
@@ -600,7 +600,7 @@ body {
   border-top-color: white;
 }
 
-.tooltip--css, .tooltip--js, .tooltip--react, .tooltip--redux, .tooltip--ruby {
+.tooltip--css, .tooltip--js, .tooltip--react, .tooltip--redux, .tooltip--ruby, .tooltip--mongodb, .tooltip--heroku {
   visibility: hidden;
   opacity: 0;
   -webkit-transform: translate(-11rem, -21rem) scale(0.9);
@@ -612,7 +612,91 @@ body {
   z-index: 5;
 }
 
-.tooltip--css::after, .tooltip--js::after, .tooltip--react::after, .tooltip--redux::after, .tooltip--ruby::after {
+.tooltip--css::after, .tooltip--js::after, .tooltip--react::after, .tooltip--redux::after, .tooltip--ruby::after, .tooltip--mongodb::after, .tooltip--heroku::after {
+  content: "";
+  display: inline-block;
+  -webkit-transform: translate(0rem, 3rem);
+          transform: translate(0rem, 3rem);
+  border: 1.5rem solid transparent;
+  border-top-color: white;
+}
+
+.tooltip--mongoose {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translate(-4rem, -19rem) scale(0.9);
+          transform: translate(-4rem, -19rem) scale(0.9);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  z-index: 5;
+}
+
+.tooltip--mongoose::after {
+  content: "";
+  display: inline-block;
+  -webkit-transform: translate(0rem, 3rem);
+          transform: translate(0rem, 3rem);
+  border: 1.5rem solid transparent;
+  border-top-color: white;
+}
+
+.tooltip--express {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translate(-10.5rem, -19rem) scale(0.9);
+          transform: translate(-10.5rem, -19rem) scale(0.9);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  z-index: 5;
+}
+
+.tooltip--express::after {
+  content: "";
+  display: inline-block;
+  -webkit-transform: translate(0rem, 3rem);
+          transform: translate(0rem, 3rem);
+  border: 1.5rem solid transparent;
+  border-top-color: white;
+}
+
+.tooltip--rails, .tooltip--git, .tooltip--shopify, .tooltip--facebook, .tooltip--analytics {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translate(-11rem, -21rem) scale(0.9);
+          transform: translate(-11rem, -21rem) scale(0.9);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  z-index: 5;
+}
+
+.tooltip--rails::after, .tooltip--git::after, .tooltip--shopify::after, .tooltip--facebook::after, .tooltip--analytics::after {
+  content: "";
+  display: inline-block;
+  -webkit-transform: translate(0rem, 3rem);
+          transform: translate(0rem, 3rem);
+  border: 1.5rem solid transparent;
+  border-top-color: white;
+}
+
+.tooltip--ads {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translate(-11rem, -21rem) scale(0.9);
+          transform: translate(-11rem, -21rem) scale(0.9);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  z-index: 5;
+}
+
+.tooltip--ads::after {
   content: "";
   display: inline-block;
   -webkit-transform: translate(0rem, 3rem);
@@ -622,14 +706,14 @@ body {
 }
 
 .photoshop-info,
-.illustrator-info {
+.illustrator-info,
+.express-info {
   display: inline-block;
 }
 
-.photoshop-info:hover .tooltip--photoshop,
-.photoshop-info:hover .tooltip--illustrator,
-.illustrator-info:hover .tooltip--photoshop,
-.illustrator-info:hover .tooltip--illustrator {
+.photoshop-info:hover [class^="tooltip"],
+.illustrator-info:hover [class^="tooltip"],
+.express-info:hover [class^="tooltip"] {
   visibility: visible;
   opacity: 1;
   -webkit-transform: translate(-10.5rem, -19rem) scale(1.1);
@@ -647,39 +731,40 @@ body {
           transform: translate(-11rem, -16rem) scale(1.1);
 }
 
+.mongoose-info:hover [class^="tooltip"] {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-4rem, -19rem) scale(1.1);
+          transform: translate(-4rem, -19rem) scale(1.1);
+}
+
 .css-info,
 .js-info,
 .react-info,
 .redux-info,
-.ruby-info {
+.ruby-info,
+.mongodb-info,
+.rails-info,
+.git-info,
+.ads-info,
+.shopify-info,
+.facebook-info,
+.analytics-info {
   display: inline-block;
 }
 
-.css-info:hover .tooltip--css,
-.css-info:hover .tooltip--js,
-.css-info:hover .tooltip--react,
-.css-info:hover .tooltip--redux,
-.css-info:hover .tooltip--ruby,
-.js-info:hover .tooltip--css,
-.js-info:hover .tooltip--js,
-.js-info:hover .tooltip--react,
-.js-info:hover .tooltip--redux,
-.js-info:hover .tooltip--ruby,
-.react-info:hover .tooltip--css,
-.react-info:hover .tooltip--js,
-.react-info:hover .tooltip--react,
-.react-info:hover .tooltip--redux,
-.react-info:hover .tooltip--ruby,
-.redux-info:hover .tooltip--css,
-.redux-info:hover .tooltip--js,
-.redux-info:hover .tooltip--react,
-.redux-info:hover .tooltip--redux,
-.redux-info:hover .tooltip--ruby,
-.ruby-info:hover .tooltip--css,
-.ruby-info:hover .tooltip--js,
-.ruby-info:hover .tooltip--react,
-.ruby-info:hover .tooltip--redux,
-.ruby-info:hover .tooltip--ruby {
+.css-info:hover [class^="tooltip"],
+.js-info:hover [class^="tooltip"],
+.react-info:hover [class^="tooltip"],
+.redux-info:hover [class^="tooltip"],
+.ruby-info:hover [class^="tooltip"],
+.mongodb-info:hover [class^="tooltip"],
+.rails-info:hover [class^="tooltip"],
+.git-info:hover [class^="tooltip"],
+.ads-info:hover [class^="tooltip"],
+.shopify-info:hover [class^="tooltip"],
+.facebook-info:hover [class^="tooltip"],
+.analytics-info:hover [class^="tooltip"] {
   visibility: visible;
   opacity: 1;
   -webkit-transform: translate(-11rem, -21rem) scale(1.1);
@@ -688,19 +773,17 @@ body {
 
 .html-info,
 .bootstrap-info,
-.jquery-info {
+.jquery-info,
+.node-info,
+.heroku-info {
   display: inline-block;
 }
 
-.html-info:hover .tooltip--html,
-.html-info:hover .tooltip--bootstrap,
-.html-info:hover .tooltip--jquery,
-.bootstrap-info:hover .tooltip--html,
-.bootstrap-info:hover .tooltip--bootstrap,
-.bootstrap-info:hover .tooltip--jquery,
-.jquery-info:hover .tooltip--html,
-.jquery-info:hover .tooltip--bootstrap,
-.jquery-info:hover .tooltip--jquery {
+.html-info:hover [class^="tooltip"],
+.bootstrap-info:hover [class^="tooltip"],
+.jquery-info:hover [class^="tooltip"],
+.node-info:hover [class^="tooltip"],
+.heroku-info:hover [class^="tooltip"] {
   visibility: visible;
   opacity: 1;
   -webkit-transform: translate(-11rem, -19rem) scale(1.1);

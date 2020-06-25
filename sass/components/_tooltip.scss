@@ -8,7 +8,8 @@
 	position: absolute;
 
 	&--photoshop,
-	&--illustrator {
+	&--illustrator,
+	&--express {
 		@include tooltip(-10.5rem, -19rem);
 	}
 
@@ -18,7 +19,8 @@
 
 	&--html,
 	&--bootstrap,
-	&--jquery {
+	&--jquery,
+	&--node {
 		@include tooltip(-11rem, -19rem);
 	}
 
@@ -26,20 +28,40 @@
 	&--js,
 	&--react,
 	&--redux,
-	&--ruby {
+	&--ruby,
+	&--mongodb,
+	&--heroku {
+		@include tooltip(-11rem, -21rem);
+	}
+
+	&--mongoose {
+		@include tooltip(-4rem, -19rem);
+	}
+
+	&--express {
+		@include tooltip(-10.5rem, -19rem);
+	}
+
+	&--rails,
+	&--git,
+	&--shopify,
+	&--facebook,
+	&--analytics {
+		@include tooltip(-11rem, -21rem);
+	}
+
+	&--ads {
 		@include tooltip(-11rem, -21rem);
 	}
 }
 
 .photoshop-info,
-.illustrator-info {
+.illustrator-info,
+.express-info {
 	display: inline-block;
 
-	&:hover {
-		.tooltip--photoshop,
-		.tooltip--illustrator {
-			@include tooltip-animation(-10.5rem, -19rem);
-		}
+	&:hover [class^="tooltip"] {
+		@include tooltip-animation(-10.5rem, -19rem);
 	}
 }
 
@@ -53,34 +75,39 @@
 	}
 }
 
+.mongoose-info {
+	&:hover [class^="tooltip"] {
+		@include tooltip-animation(-4rem, -19rem);
+	}
+}
+
 .css-info,
 .js-info,
 .react-info,
 .redux-info,
-.ruby-info {
+.ruby-info,
+.mongodb-info,
+.rails-info,
+.git-info,
+.ads-info,
+.shopify-info,
+.facebook-info,
+.analytics-info {
 	display: inline-block;
 
-	&:hover {
-		.tooltip--css,
-		.tooltip--js,
-		.tooltip--react,
-		.tooltip--redux,
-		.tooltip--ruby {
-			@include tooltip-animation(-11rem, -21rem);
-		}
+	&:hover [class^="tooltip"] {
+		@include tooltip-animation(-11rem, -21rem);
 	}
 }
 
 .html-info,
 .bootstrap-info,
-.jquery-info {
+.jquery-info,
+.node-info,
+.heroku-info {
 	display: inline-block;
 
-	&:hover {
-		.tooltip--html,
-		.tooltip--bootstrap,
-		.tooltip--jquery {
-			@include tooltip-animation(-11rem, -19rem);
-		}
+	&:hover [class^="tooltip"] {
+		@include tooltip-animation(-11rem, -19rem);
 	}
 }

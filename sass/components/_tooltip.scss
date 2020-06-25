@@ -31,20 +31,12 @@
 	}
 }
 
-.photoshop-info {
-	display: inline-block;
-
-	&:hover {
-		.tooltip--photoshop {
-			@include tooltip-animation(-10.5rem, -19rem);
-		}
-	}
-}
-
+.photoshop-info,
 .illustrator-info {
 	display: inline-block;
 
 	&:hover {
+		.tooltip--photoshop,
 		.tooltip--illustrator {
 			@include tooltip-animation(-10.5rem, -19rem);
 		}
@@ -61,81 +53,34 @@
 	}
 }
 
-.html-info {
-	display: inline-block;
-	&:hover {
-		.tooltip--html {
-			@include tooltip-animation(-11rem, -19rem);
-		}
-	}
-}
-
-.css-info {
-	display: inline-block;
-
-	&:hover {
-		.tooltip--css {
-			@include tooltip-animation(-11rem, -21rem);
-		}
-	}
-}
-
-.js-info {
-	display: inline-block;
-
-	&:hover {
-		.tooltip--js {
-			@include tooltip-animation(-11rem, -21rem);
-		}
-	}
-}
-
-.bootstrap-info {
-	display: inline-block;
-
-	&:hover {
-		.tooltip--bootstrap {
-			@include tooltip-animation(-11rem, -19rem);
-		}
-	}
-}
-
-.jquery-info {
-	display: inline-block;
-
-	&:hover {
-		.tooltip--jquery {
-			@include tooltip-animation(-11rem, -19rem);
-		}
-	}
-}
-
-.react-info {
-	display: inline-block;
-
-	&:hover {
-		.tooltip--react {
-			@include tooltip-animation(-11rem, -21rem);
-		}
-	}
-}
-
-.redux-info {
-	display: inline-block;
-
-	&:hover {
-		.tooltip--redux {
-			@include tooltip-animation(-11rem, -21rem);
-		}
-	}
-}
-
+.css-info,
+.js-info,
+.react-info,
+.redux-info,
 .ruby-info {
 	display: inline-block;
 
 	&:hover {
+		.tooltip--css,
+		.tooltip--js,
+		.tooltip--react,
+		.tooltip--redux,
 		.tooltip--ruby {
 			@include tooltip-animation(-11rem, -21rem);
+		}
+	}
+}
+
+.html-info,
+.bootstrap-info,
+.jquery-info {
+	display: inline-block;
+
+	&:hover {
+		.tooltip--html,
+		.tooltip--bootstrap,
+		.tooltip--jquery {
+			@include tooltip-animation(-11rem, -19rem);
 		}
 	}
 }

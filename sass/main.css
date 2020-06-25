@@ -621,21 +621,14 @@ body {
   border-top-color: white;
 }
 
-.photoshop-info {
-  display: inline-block;
-}
-
-.photoshop-info:hover .tooltip--photoshop {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translate(-10.5rem, -19rem) scale(1.1);
-          transform: translate(-10.5rem, -19rem) scale(1.1);
-}
-
+.photoshop-info,
 .illustrator-info {
   display: inline-block;
 }
 
+.photoshop-info:hover .tooltip--photoshop,
+.photoshop-info:hover .tooltip--illustrator,
+.illustrator-info:hover .tooltip--photoshop,
 .illustrator-info:hover .tooltip--illustrator {
   visibility: visible;
   opacity: 1;
@@ -654,92 +647,64 @@ body {
           transform: translate(-11rem, -16rem) scale(1.1);
 }
 
-.html-info {
-  display: inline-block;
-}
-
-.html-info:hover .tooltip--html {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translate(-11rem, -19rem) scale(1.1);
-          transform: translate(-11rem, -19rem) scale(1.1);
-}
-
-.css-info {
-  display: inline-block;
-}
-
-.css-info:hover .tooltip--css {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translate(-11rem, -21rem) scale(1.1);
-          transform: translate(-11rem, -21rem) scale(1.1);
-}
-
-.js-info {
-  display: inline-block;
-}
-
-.js-info:hover .tooltip--js {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translate(-11rem, -21rem) scale(1.1);
-          transform: translate(-11rem, -21rem) scale(1.1);
-}
-
-.bootstrap-info {
-  display: inline-block;
-}
-
-.bootstrap-info:hover .tooltip--bootstrap {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translate(-11rem, -19rem) scale(1.1);
-          transform: translate(-11rem, -19rem) scale(1.1);
-}
-
-.jquery-info {
-  display: inline-block;
-}
-
-.jquery-info:hover .tooltip--jquery {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translate(-11rem, -19rem) scale(1.1);
-          transform: translate(-11rem, -19rem) scale(1.1);
-}
-
-.react-info {
-  display: inline-block;
-}
-
-.react-info:hover .tooltip--react {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translate(-11rem, -21rem) scale(1.1);
-          transform: translate(-11rem, -21rem) scale(1.1);
-}
-
-.redux-info {
-  display: inline-block;
-}
-
-.redux-info:hover .tooltip--redux {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translate(-11rem, -21rem) scale(1.1);
-          transform: translate(-11rem, -21rem) scale(1.1);
-}
-
+.css-info,
+.js-info,
+.react-info,
+.redux-info,
 .ruby-info {
   display: inline-block;
 }
 
+.css-info:hover .tooltip--css,
+.css-info:hover .tooltip--js,
+.css-info:hover .tooltip--react,
+.css-info:hover .tooltip--redux,
+.css-info:hover .tooltip--ruby,
+.js-info:hover .tooltip--css,
+.js-info:hover .tooltip--js,
+.js-info:hover .tooltip--react,
+.js-info:hover .tooltip--redux,
+.js-info:hover .tooltip--ruby,
+.react-info:hover .tooltip--css,
+.react-info:hover .tooltip--js,
+.react-info:hover .tooltip--react,
+.react-info:hover .tooltip--redux,
+.react-info:hover .tooltip--ruby,
+.redux-info:hover .tooltip--css,
+.redux-info:hover .tooltip--js,
+.redux-info:hover .tooltip--react,
+.redux-info:hover .tooltip--redux,
+.redux-info:hover .tooltip--ruby,
+.ruby-info:hover .tooltip--css,
+.ruby-info:hover .tooltip--js,
+.ruby-info:hover .tooltip--react,
+.ruby-info:hover .tooltip--redux,
 .ruby-info:hover .tooltip--ruby {
   visibility: visible;
   opacity: 1;
   -webkit-transform: translate(-11rem, -21rem) scale(1.1);
           transform: translate(-11rem, -21rem) scale(1.1);
+}
+
+.html-info,
+.bootstrap-info,
+.jquery-info {
+  display: inline-block;
+}
+
+.html-info:hover .tooltip--html,
+.html-info:hover .tooltip--bootstrap,
+.html-info:hover .tooltip--jquery,
+.bootstrap-info:hover .tooltip--html,
+.bootstrap-info:hover .tooltip--bootstrap,
+.bootstrap-info:hover .tooltip--jquery,
+.jquery-info:hover .tooltip--html,
+.jquery-info:hover .tooltip--bootstrap,
+.jquery-info:hover .tooltip--jquery {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-11rem, -19rem) scale(1.1);
+          transform: translate(-11rem, -19rem) scale(1.1);
 }
 
 .row {

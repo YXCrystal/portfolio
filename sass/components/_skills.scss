@@ -27,24 +27,24 @@
 	}
 
 	&__front {
-		width: 5rem;
+		width: 5.5rem;
 	}
 
 	&__back {
 		width: 6.5rem;
 
 		&--mongoose {
-			font-size: $font-size-default;
+			font-size: $font-size-small;
 			color: #871000;
-			transform: translateX(6rem);
+			transform: translateX(5.5rem);
 			margin: 1rem 0;
 		}
 
 		&--express {
-			font-size: $font-size-default;
+			font-size: $font-size-small;
 			margin: 2rem 0;
 			display: inline-block;
-			margin-right: 1rem;
+			margin-right: 2rem;
 		}
 	}
 }

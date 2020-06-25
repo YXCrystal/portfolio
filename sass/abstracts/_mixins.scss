@@ -10,14 +10,14 @@
 	visibility: hidden;
 	opacity: 0;
 	transform: translate($x-value, $y-value) scale(0.9);
-	transition: all 0.5s;
+	transition: all 0.4s;
 	transform-origin: bottom;
 	z-index: 5;
 
 	&::after {
 		content: "";
 		display: inline-block;
-		transform: translate(0rem, 5rem);
+		transform: translate(0rem, 3rem);
 		border: 1.5rem solid transparent;
 		border-top-color: white;
 	}

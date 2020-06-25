@@ -1,46 +1,61 @@
 .tooltip {
-	background-color: white;
+	background-color: rgba(white, 0.9);
 	width: 28rem;
-	padding: 2rem;
+	padding: 0 2rem;
+	padding-top: 2rem;
+
 	border-radius: 0.5rem;
 	position: absolute;
 
 	&--photoshop,
 	&--illustrator {
-		@include tooltip(-10.5rem, -20.5rem);
+		@include tooltip(-10.5rem, -19rem);
 	}
 
 	&--gimp {
-		@include tooltip(-11rem, -18rem);
+		@include tooltip(-11rem, -16rem);
+	}
+
+	&--html {
+		@include tooltip(-11rem, -17rem);
 	}
 }
 
-.photoshop {
+.photoshop-info {
 	display: inline-block;
 
 	&:hover {
 		.tooltip--photoshop {
-			@include tooltip-animation(-10.5rem, -20.5rem);
+			@include tooltip-animation(-10.5rem, -19rem);
 		}
 	}
 }
 
-.illustrator {
+.illustrator-info {
 	display: inline-block;
 
 	&:hover {
 		.tooltip--illustrator {
-			@include tooltip-animation(-11rem, -20.5rem);
+			@include tooltip-animation(-10.5rem, -19rem);
 		}
 	}
 }
 
-.gimp {
+.gimp-info {
 	display: inline-block;
 
 	&:hover {
 		.tooltip--gimp {
-			@include tooltip-animation(-11rem, -18rem);
+			@include tooltip-animation(-11rem, -16rem);
+		}
+	}
+}
+
+.html-info {
+	display: inline-block;
+	&:hover {
+		.tooltip--html {
+			@include tooltip-animation(-11rem, -17rem);
 		}
 	}
 }

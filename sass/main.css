@@ -579,11 +579,11 @@ body {
   border-top-color: white;
 }
 
-.tooltip--html {
+.tooltip--html, .tooltip--bootstrap, .tooltip--jquery {
   visibility: hidden;
   opacity: 0;
-  -webkit-transform: translate(-11rem, -17rem) scale(0.9);
-          transform: translate(-11rem, -17rem) scale(0.9);
+  -webkit-transform: translate(-11rem, -19rem) scale(0.9);
+          transform: translate(-11rem, -19rem) scale(0.9);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -webkit-transform-origin: bottom;
@@ -591,7 +591,28 @@ body {
   z-index: 5;
 }
 
-.tooltip--html::after {
+.tooltip--html::after, .tooltip--bootstrap::after, .tooltip--jquery::after {
+  content: "";
+  display: inline-block;
+  -webkit-transform: translate(0rem, 3rem);
+          transform: translate(0rem, 3rem);
+  border: 1.5rem solid transparent;
+  border-top-color: white;
+}
+
+.tooltip--css, .tooltip--js, .tooltip--react, .tooltip--redux, .tooltip--ruby {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translate(-11rem, -21rem) scale(0.9);
+          transform: translate(-11rem, -21rem) scale(0.9);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  z-index: 5;
+}
+
+.tooltip--css::after, .tooltip--js::after, .tooltip--react::after, .tooltip--redux::after, .tooltip--ruby::after {
   content: "";
   display: inline-block;
   -webkit-transform: translate(0rem, 3rem);
@@ -640,8 +661,85 @@ body {
 .html-info:hover .tooltip--html {
   visibility: visible;
   opacity: 1;
-  -webkit-transform: translate(-11rem, -17rem) scale(1.1);
-          transform: translate(-11rem, -17rem) scale(1.1);
+  -webkit-transform: translate(-11rem, -19rem) scale(1.1);
+          transform: translate(-11rem, -19rem) scale(1.1);
+}
+
+.css-info {
+  display: inline-block;
+}
+
+.css-info:hover .tooltip--css {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-11rem, -21rem) scale(1.1);
+          transform: translate(-11rem, -21rem) scale(1.1);
+}
+
+.js-info {
+  display: inline-block;
+}
+
+.js-info:hover .tooltip--js {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-11rem, -21rem) scale(1.1);
+          transform: translate(-11rem, -21rem) scale(1.1);
+}
+
+.bootstrap-info {
+  display: inline-block;
+}
+
+.bootstrap-info:hover .tooltip--bootstrap {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-11rem, -19rem) scale(1.1);
+          transform: translate(-11rem, -19rem) scale(1.1);
+}
+
+.jquery-info {
+  display: inline-block;
+}
+
+.jquery-info:hover .tooltip--jquery {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-11rem, -19rem) scale(1.1);
+          transform: translate(-11rem, -19rem) scale(1.1);
+}
+
+.react-info {
+  display: inline-block;
+}
+
+.react-info:hover .tooltip--react {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-11rem, -21rem) scale(1.1);
+          transform: translate(-11rem, -21rem) scale(1.1);
+}
+
+.redux-info {
+  display: inline-block;
+}
+
+.redux-info:hover .tooltip--redux {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-11rem, -21rem) scale(1.1);
+          transform: translate(-11rem, -21rem) scale(1.1);
+}
+
+.ruby-info {
+  display: inline-block;
+}
+
+.ruby-info:hover .tooltip--ruby {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-11rem, -21rem) scale(1.1);
+          transform: translate(-11rem, -21rem) scale(1.1);
 }
 
 .row {

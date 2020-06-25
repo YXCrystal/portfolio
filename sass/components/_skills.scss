@@ -48,3 +48,45 @@
 		}
 	}
 }
+
+@media only screen and (max-width: $huge-screen) {
+	.skills .row .col-1-of-4 {
+		position: relative;
+		width: 30%;
+	}
+
+	.skills {
+		.row {
+			translate: 17%;
+		}
+
+		&__box {
+			background-image: linear-gradient(
+				to right,
+				rgba(blue, 0.8),
+				rgba($dark-pink, 0.8)
+			);
+			height: 23rem;
+		}
+
+		&__icons {
+			margin-top: 2rem;
+		}
+	}
+}
+
+@media only screen and (max-width: $xl-screen) {
+	.skills {
+		&__box {
+			background-image: linear-gradient(
+				to right,
+				rgba(pink, 0.8),
+				rgba($dark-pink, 0.8)
+			);
+		}
+
+		&__icons {
+			margin-top: 2rem;
+		}
+	}
+}

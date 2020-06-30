@@ -46,10 +46,7 @@
 	&--git,
 	&--shopify,
 	&--facebook,
-	&--analytics {
-		@include tooltip(-11rem, -21rem);
-	}
-
+	&--analytics,
 	&--ads {
 		@include tooltip(-11rem, -21rem);
 	}

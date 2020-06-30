@@ -20,6 +20,7 @@
 
 		a:hover {
 			color: $dark-pink;
+			text-shadow: 1px 1px 5px rgba(black, 0.5);
 		}
 
 		&:not(:last-child) {

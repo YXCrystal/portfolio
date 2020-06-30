@@ -211,18 +211,31 @@ body {
   display: block;
   font-size: 4rem;
   text-transform: uppercase;
+  color: white;
+}
+
+.title-heading--color {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffaf87), to(#fd7080));
+  background-image: linear-gradient(to right, #ffaf87, #fd7080);
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  display: block;
 }
 
 .paragraph {
   font-size: 1.6rem;
 }
 
-.skills-heading {
+.box-heading {
   font-size: 2rem;
   color: white;
   margin-top: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .margin-bottom-small {
@@ -231,6 +244,10 @@ body {
 
 .margin-bottom-medium {
   margin-bottom: 3rem;
+}
+
+.margin-bottom-large {
+  margin-bottom: 6rem;
 }
 
 .header {
@@ -421,8 +438,8 @@ body {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5)), url(../images/notebook.jpg);
   background-size: cover;
   background-position: top;
-  padding: 20rem 0;
-  padding-bottom: 50rem;
+  padding: 15rem 0;
+  padding-bottom: 20rem;
   text-align: center;
   margin: 2.5rem;
   margin-top: -3rem;
@@ -843,6 +860,42 @@ body {
   opacity: 1;
   -webkit-transform: translate(-11rem, -19rem) scale(1.1);
           transform: translate(-11rem, -19rem) scale(1.1);
+}
+
+.projects {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 175, 135, 0.7)), to(rgba(253, 112, 128, 0.7))), url(../images/code.jpg);
+  background-image: linear-gradient(to right, rgba(255, 175, 135, 0.7), rgba(253, 112, 128, 0.7)), url(../images/code.jpg);
+  background-size: cover;
+  background-position: top;
+  padding: 15rem 0;
+  padding-bottom: 80rem;
+  text-align: center;
+  margin: 2.5rem;
+  margin-top: -3rem;
+}
+
+.card {
+  background-color: white;
+  height: 25rem;
+  border-radius: 0.5rem;
+  position: relative;
+  height: 35rem;
+}
+
+.card__side {
+  height: 35rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.card__side--front-1 {
+  background-image: url(../images/wishlist.jpg);
 }
 
 .row {

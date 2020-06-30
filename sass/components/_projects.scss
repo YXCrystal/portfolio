@@ -1,0 +1,41 @@
+.projects {
+	background-image: linear-gradient(
+			to right,
+			rgba($light-peach, 0.7),
+			rgba($dark-pink, 0.7)
+		),
+		url(../images/code.jpg);
+	background-size: cover;
+	background-position: top;
+	padding: 15rem 0;
+	padding-bottom: 80rem;
+	text-align: center;
+	margin: 2.5rem;
+	margin-top: -3rem;
+}
+
+.card {
+	background-color: white;
+	height: 25rem;
+	border-radius: 0.5rem;
+	position: relative;
+	height: 35rem;
+
+	&__side {
+		height: 35rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border-radius: 0.5rem;
+		padding: 2rem;
+		background-position: center;
+		background-size: cover;
+
+		&--front {
+			&-1 {
+				background-image: url(../images/wishlist.jpg);
+			}
+		}
+	}
+}

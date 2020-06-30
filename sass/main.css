@@ -485,7 +485,7 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 175, 135, 0.8)), to(rgba(253, 112, 128, 0.8)));
   background-image: linear-gradient(to right, rgba(255, 175, 135, 0.8), rgba(253, 112, 128, 0.8));
   padding: 2rem;
-  margin-top: 16rem;
+  margin-top: 20rem;
   height: 28rem;
   border-radius: 0.5rem;
   -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -514,14 +514,6 @@ body {
   width: 6.5rem;
 }
 
-.icons__back--mongoose {
-  font-size: 2rem;
-  color: #871000;
-  -webkit-transform: translateX(5.5rem);
-          transform: translateX(5.5rem);
-  margin: 1rem 0;
-}
-
 .icons__back--express {
   font-size: 2rem;
   margin: 2rem 0;
@@ -541,50 +533,73 @@ body {
     height: 25rem;
   }
   .skills__box:nth-last-child(-n + 2) {
-    -webkit-transform: translateY(-9rem);
-            transform: translateY(-9rem);
+    -webkit-transform: translateY(-13rem);
+            transform: translateY(-13rem);
   }
   .skills__icons {
     margin-top: 2.5rem;
   }
-  .icons__back {
-    margin: 0;
-  }
-  .icons__back--express {
-    margin-right: 2rem;
-    margin-top: 2rem;
-  }
 }
 
 @media only screen and (max-width: 1200px) {
+  .skills .row .col-1-of-4 {
+    position: relative;
+  }
   .skills__icons {
     margin-top: 2rem;
   }
   .skills .icons__front {
     width: 5rem;
   }
+  .skills .icons__others {
+    width: 5rem;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   .skills .row .col-1-of-4 {
-    width: 25rem;
+    width: 36%;
   }
   .skills .row {
-    translate: 0;
-    width: 100%;
-    margin: 0 auto;
+    translate: 5rem;
   }
-  .skills__box {
-    width: 10rem;
+  .skills .icons__design {
+    width: 5rem;
   }
-  .icons__design {
-    width: 7rem;
-  }
-  .icons__front {
+  .skills .icons__front, .skills .icons__others {
     width: 4.5rem;
   }
-  .icons__back {
-    font-size: 1.8rem;
+  .skills .icons__back {
+    width: 6rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skills .row .col-1-of-4 {
+    width: 65%;
+  }
+  .skills .row {
+    -webkit-transform: translateX(5rem);
+            transform: translateX(5rem);
+  }
+  .skills__box:not(:first-child) {
+    -webkit-transform: translateY(-13rem);
+            transform: translateY(-13rem);
+  }
+  .skills__box:nth-last-child(-n + 2) {
+    -webkit-transform: translateY(-26rem);
+            transform: translateY(-26rem);
+  }
+  .skills__box:last-child {
+    -webkit-transform: translateY(-39rem);
+            transform: translateY(-39rem);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills .row {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 

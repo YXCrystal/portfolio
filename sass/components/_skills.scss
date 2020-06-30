@@ -6,7 +6,7 @@
 			rgba($dark-pink, 0.8)
 		);
 		padding: 2rem;
-		margin-top: 16rem;
+		margin-top: 20rem;
 		height: 28rem;
 		border-radius: 0.5rem;
 		box-shadow: 1px 1px 3px rgba(black, 0.3);
@@ -33,13 +33,6 @@
 	&__back {
 		width: 6.5rem;
 
-		&--mongoose {
-			font-size: $font-size-small;
-			color: #871000;
-			transform: translateX(5.5rem);
-			margin: 1rem 0;
-		}
-
 		&--express {
 			font-size: $font-size-small;
 			margin: 2rem 0;
@@ -64,7 +57,7 @@
 			height: 25rem;
 
 			&:nth-last-child(-n + 2) {
-				transform: translateY(-9rem);
+				transform: translateY(-13rem);
 			}
 		}
 
@@ -72,20 +65,13 @@
 			margin-top: 2.5rem;
 		}
 	}
-
-	.icons {
-		&__back {
-			margin: 0;
-
-			&--express {
-				margin-right: 2rem;
-				margin-top: 2rem;
-			}
-		}
-	}
 }
 
 @media only screen and (max-width: $xl-screen) {
+	.skills .row .col-1-of-4 {
+		position: relative;
+	}
+
 	.skills {
 		&__icons {
 			margin-top: 2rem;
@@ -95,38 +81,71 @@
 			&__front {
 				width: 5rem;
 			}
+			&__others {
+				width: 5rem;
+			}
 		}
 	}
 }
 
 @media only screen and (max-width: $large-screen) {
 	.skills .row .col-1-of-4 {
-		width: 25rem;
+		width: 36%;
 	}
 
 	.skills {
 		.row {
-			translate: 0;
-			width: 100%;
-			margin: 0 auto;
+			translate: 5rem;
 		}
 
-		&__box {
-			width: 10rem;
+		.icons {
+			&__design {
+				width: 5rem;
+			}
+			&__front,
+			&__others {
+				width: 4.5rem;
+			}
+
+			&__back {
+				width: 6rem;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $medium-screen) {
+	.skills .row .col-1-of-4 {
+		width: 65%;
+	}
+
+	.skills {
+		.row {
+			transform: translateX(5rem);
 		}
 	}
 
-	.icons {
-		&__design {
-			width: 7rem;
-		}
+	.skills {
+		&__box {
+			&:not(:first-child) {
+				transform: translateY(-13rem);
+			}
 
-		&__front {
-			width: 4.5rem;
-		}
+			&:nth-last-child(-n + 2) {
+				transform: translateY(-26rem);
+			}
 
-		&__back {
-			font-size: 1.8rem;
+			&:last-child {
+				transform: translateY(-39rem);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $small-screen) {
+	.skills {
+		.row {
+			transform: translateX(0);
 		}
 	}
 }

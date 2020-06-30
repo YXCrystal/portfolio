@@ -246,7 +246,7 @@ body {
 
 .header__logo-box {
   position: relative;
-  padding-left: 5rem;
+  padding-left: 4rem;
   padding-top: 2rem;
 }
 
@@ -353,13 +353,14 @@ body {
 
 .navbar {
   color: white;
-  padding: 2rem 5rem;
   font-size: 2rem;
   font-weight: 700;
 }
 
 .navbar__links {
   float: right;
+  -webkit-transform: translate(-5rem, 2.5rem);
+          transform: translate(-5rem, 2.5rem);
 }
 
 .navbar__link {
@@ -380,7 +381,7 @@ body {
 }
 
 .navbar__link:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 }
 
 .btn, .btn:visited, .btn:active {

@@ -1,11 +1,11 @@
 .navbar {
 	color: white;
-	padding: 2rem 5rem;
 	font-size: $font-size-small;
 	font-weight: 700;
 
 	&__links {
 		float: right;
+		transform: translate(-5rem, 2.5rem);
 	}
 
 	&__link {
@@ -24,7 +24,7 @@
 		}
 
 		&:not(:last-child) {
-			margin-right: 2rem;
+			margin-right: 1.5rem;
 		}
 	}
 }

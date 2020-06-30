@@ -541,8 +541,8 @@ body {
     height: 25rem;
   }
   .skills__box:nth-last-child(-n + 2) {
-    -webkit-transform: translateY(-5rem);
-            transform: translateY(-5rem);
+    -webkit-transform: translateY(-9rem);
+            transform: translateY(-9rem);
   }
   .skills__icons {
     margin-top: 2.5rem;
@@ -563,15 +563,28 @@ body {
   .skills .icons__front {
     width: 5rem;
   }
-  .skills .icons__others {
-    width: 5.5rem;
-  }
 }
 
 @media only screen and (max-width: 992px) {
+  .skills .row .col-1-of-4 {
+    width: 25rem;
+  }
+  .skills .row {
+    translate: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
   .skills__box {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 255, 0.8)), to(rgba(253, 112, 128, 0.8)));
-    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.8), rgba(253, 112, 128, 0.8));
+    width: 10rem;
+  }
+  .icons__design {
+    width: 7rem;
+  }
+  .icons__front {
+    width: 4.5rem;
+  }
+  .icons__back {
+    font-size: 1.8rem;
   }
 }
 

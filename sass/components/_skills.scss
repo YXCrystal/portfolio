@@ -64,7 +64,7 @@
 			height: 25rem;
 
 			&:nth-last-child(-n + 2) {
-				transform: translateY(-5rem);
+				transform: translateY(-9rem);
 			}
 		}
 
@@ -95,22 +95,38 @@
 			&__front {
 				width: 5rem;
 			}
-
-			&__others {
-				width: 5.5rem;
-			}
 		}
 	}
 }
 
 @media only screen and (max-width: $large-screen) {
+	.skills .row .col-1-of-4 {
+		width: 25rem;
+	}
+
 	.skills {
+		.row {
+			translate: 0;
+			width: 100%;
+			margin: 0 auto;
+		}
+
 		&__box {
-			background-image: linear-gradient(
-				to right,
-				rgba(blue, 0.8),
-				rgba($dark-pink, 0.8)
-			);
+			width: 10rem;
+		}
+	}
+
+	.icons {
+		&__design {
+			width: 7rem;
+		}
+
+		&__front {
+			width: 4.5rem;
+		}
+
+		&__back {
+			font-size: 1.8rem;
 		}
 	}
 }

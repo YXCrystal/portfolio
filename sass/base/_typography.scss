@@ -1,3 +1,13 @@
+@mixin color {
+	background-image: linear-gradient(to right, $light-peach, $dark-pink);
+	display: inline-block; // Only occupies the space of the content
+	background-clip: text;
+	-webkit-background-clip: text; // Background gets clip to where the text is
+	color: transparent; // Change text to transparent so we see the clip background
+	letter-spacing: 2px;
+	display: block;
+}
+
 body {
 	font-family: Raleway, san-serif;
 }
@@ -18,16 +28,6 @@ body {
 	text-transform: uppercase;
 }
 
-.color-heading {
-	background-image: linear-gradient(to right, $light-peach, $dark-pink);
-	display: inline-block; // Only occupies the space of the content
-	background-clip: text;
-	-webkit-background-clip: text; // Background gets clip to where the text is
-	color: transparent; // Change text to transparent so we see the clip background
-	letter-spacing: 2px;
-	display: block;
-}
-
 .title-heading {
 	display: block;
 	font-size: $font-size-medium;
@@ -35,16 +35,13 @@ body {
 	color: white;
 
 	&--color {
-		background-image: linear-gradient(to right, $light-peach, $dark-pink);
-		display: inline-block; // Only occupies the space of the content
-		background-clip: text;
-		-webkit-background-clip: text; // Background gets clip to where the text is
-		color: transparent; // Change text to transparent so we see the clip background
-		letter-spacing: 2px;
-		display: block;
+		@include color;
 	}
 }
 
+.color-heading {
+	@include color;
+}
 .paragraph {
 	font-size: $font-size-default;
 }

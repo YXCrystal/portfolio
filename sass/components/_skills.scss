@@ -61,32 +61,56 @@
 		}
 
 		&__box {
-			background-image: linear-gradient(
-				to right,
-				rgba(blue, 0.8),
-				rgba($dark-pink, 0.8)
-			);
-			height: 23rem;
+			height: 25rem;
+
+			&:nth-last-child(-n + 2) {
+				transform: translateY(-5rem);
+			}
 		}
 
 		&__icons {
-			margin-top: 2rem;
+			margin-top: 2.5rem;
+		}
+	}
+
+	.icons {
+		&__back {
+			margin: 0;
+
+			&--express {
+				margin-right: 2rem;
+				margin-top: 2rem;
+			}
 		}
 	}
 }
 
 @media only screen and (max-width: $xl-screen) {
 	.skills {
+		&__icons {
+			margin-top: 2rem;
+		}
+
+		.icons {
+			&__front {
+				width: 5rem;
+			}
+
+			&__others {
+				width: 5.5rem;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $large-screen) {
+	.skills {
 		&__box {
 			background-image: linear-gradient(
 				to right,
-				rgba(pink, 0.8),
+				rgba(blue, 0.8),
 				rgba($dark-pink, 0.8)
 			);
-		}
-
-		&__icons {
-			margin-top: 2rem;
 		}
 	}
 }

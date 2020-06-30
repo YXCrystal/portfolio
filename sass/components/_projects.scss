@@ -1,8 +1,8 @@
 .projects {
 	background-image: linear-gradient(
-			to right,
-			rgba($light-peach, 0.7),
-			rgba($dark-pink, 0.7)
+			to bottom,
+			rgba($light-peach, 0.5),
+			rgba($dark-pink, 0.5)
 		),
 		url(../images/code.jpg);
 	background-size: cover;
@@ -20,6 +20,8 @@
 	border-radius: 0.5rem;
 	position: relative;
 	height: 35rem;
+	box-shadow: 1px 1px 5px rgba(black, 0.3);
+	transition: all 0.8s ease;
 
 	&__side {
 		height: 35rem;
@@ -31,10 +33,19 @@
 		padding: 2rem;
 		background-position: center;
 		background-size: cover;
+		overflow: hidden;
 
 		&--front {
 			&-1 {
 				background-image: url(../images/wishlist.jpg);
+			}
+
+			&-2 {
+				background-image: url(../images/artbook.jpg);
+			}
+
+			&-3 {
+				background-image: url(../images/diary.jpg);
 			}
 		}
 	}

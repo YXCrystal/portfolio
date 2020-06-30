@@ -863,8 +863,8 @@ body {
 }
 
 .projects {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 175, 135, 0.7)), to(rgba(253, 112, 128, 0.7))), url(../images/code.jpg);
-  background-image: linear-gradient(to right, rgba(255, 175, 135, 0.7), rgba(253, 112, 128, 0.7)), url(../images/code.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 175, 135, 0.5)), to(rgba(253, 112, 128, 0.5))), url(../images/code.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 175, 135, 0.5), rgba(253, 112, 128, 0.5)), url(../images/code.jpg);
   background-size: cover;
   background-position: top;
   padding: 15rem 0;
@@ -880,6 +880,10 @@ body {
   border-radius: 0.5rem;
   position: relative;
   height: 35rem;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 .card__side {
@@ -892,10 +896,19 @@ body {
   padding: 2rem;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .card__side--front-1 {
   background-image: url(../images/wishlist.jpg);
+}
+
+.card__side--front-2 {
+  background-image: url(../images/artbook.jpg);
+}
+
+.card__side--front-3 {
+  background-image: url(../images/diary.jpg);
 }
 
 .row {

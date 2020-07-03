@@ -1,24 +1,4 @@
-body {
-	font-family: Raleway, san-serif;
-}
-
-.primary-heading {
-	font-size: $font-size-large;
-	text-transform: uppercase;
-}
-
-.secondary-heading {
-	font-size: $font-size-small;
-	text-transform: uppercase;
-}
-
-.tertiary-heading {
-	font-size: $font-size-small;
-	letter-spacing: 0.2rem;
-	text-transform: uppercase;
-}
-
-.color-heading {
+@mixin color {
 	background-image: linear-gradient(to right, $light-peach, $dark-pink);
 	display: inline-block; // Only occupies the space of the content
 	background-clip: text;
@@ -28,21 +8,45 @@ body {
 	display: block;
 }
 
+body {
+	font-family: Raleway, san-serif;
+}
+
+.primary-heading {
+	font-size: $font-size-large;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px rgba(black, 0.3);
+}
+
+.secondary-heading {
+	font-size: $font-size-small;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px rgba(black, 0.3);
+}
+
+.tertiary-heading {
+	font-size: $font-size-small;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+}
+
 .title-heading {
 	display: block;
 	font-size: $font-size-medium;
 	text-transform: uppercase;
 	color: white;
 
-	&--color {
-		background-image: linear-gradient(to right, $light-peach, $dark-pink);
-		display: inline-block; // Only occupies the space of the content
-		background-clip: text;
-		-webkit-background-clip: text; // Background gets clip to where the text is
-		color: transparent; // Change text to transparent so we see the clip background
-		letter-spacing: 2px;
-		display: block;
+	&--shadow {
+		text-shadow: 1px 1px 2px rgba(black, 0.3);
 	}
+
+	&--color {
+		@include color;
+	}
+}
+
+.color-heading {
+	@include color;
 }
 
 .paragraph {

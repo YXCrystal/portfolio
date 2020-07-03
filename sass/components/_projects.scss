@@ -23,6 +23,20 @@
 	height: 35rem;
 	transition: all 0.8s ease;
 
+	&__links {
+		text-decoration: none;
+		outline: none;
+
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+
+		& img {
+			margin-top: 1rem;
+			width: 4rem;
+		}
+	}
+
 	&__side {
 		height: 35rem;
 		position: absolute;
@@ -50,11 +64,55 @@
 			&-3 {
 				background-image: url(../images/diary.jpg);
 			}
+			&-4 {
+				background-image: url(../images/pomodoro.jpg);
+			}
+			&-5 {
+				background-image: url(../images/calculator.jpg);
+			}
+
+			&-6 {
+				background-image: url(../images/etchsketch.jpg);
+			}
 		}
 
 		&--back {
-			background-color: pink;
 			transform: rotateY(-180deg);
+
+			&-1 {
+				background-image: url(../images/wishlist2.jpg);
+			}
+
+			&-2 {
+				background-image: url(../images/artbook2.jpg);
+			}
+
+			&-3 {
+				background-image: url(../images/diary2.jpg);
+			}
+			&-4 {
+				background-image: url(../images/pomodoro.jpg);
+			}
+
+			&-5 {
+				background-image: url(../images/calculator.jpg);
+			}
+
+			&-6 {
+				background-image: url(../images/etchsketch.jpg);
+			}
+		}
+	}
+
+	&__details {
+		background-color: rgba(white, 0.8);
+		padding: 0.5rem;
+		border-radius: 0.5rem;
+		margin-top: 1rem;
+
+		&-5,
+		&-6 {
+			padding-bottom: 3rem;
 		}
 	}
 

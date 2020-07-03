@@ -90,6 +90,7 @@
 			&-3 {
 				background-image: url(../images/diary2.jpg);
 			}
+<<<<<<< HEAD
 			&-4 {
 				background-image: url(../images/pomodoro.jpg);
 			}
@@ -113,7 +114,15 @@
 		&-5,
 		&-6 {
 			padding-bottom: 3rem;
+=======
+>>>>>>> 5a5391919b9c89e3a743f36e267bf721a2227dcb
 		}
+	}
+
+	&__details {
+		background-color: rgba(white, 0.8);
+		padding: 0.5rem;
+		border-radius: 0.5rem;
 	}
 
 	&:hover &__side--front {

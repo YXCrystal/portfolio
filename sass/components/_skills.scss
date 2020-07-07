@@ -145,7 +145,10 @@
 @media only screen and (max-width: $small-screen) {
 	.skills {
 		.row {
-			transform: translateX(0);
+			transform: translateX(-2rem);
 		}
+	}
+	.skills .row .col-1-of-4 {
+		width: 80%;
 	}
 }

@@ -5,7 +5,7 @@
 
 	&__links {
 		float: right;
-		transform: translate(-5rem, 2.5rem);
+		transform: translate(-3rem, 2.5rem);
 	}
 
 	&__link {
@@ -24,7 +24,7 @@
 		}
 
 		&:not(:last-child) {
-			margin-right: 1.5rem;
+			margin-right: 1rem;
 		}
 	}
 }

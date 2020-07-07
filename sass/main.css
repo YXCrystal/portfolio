@@ -273,7 +273,7 @@ body {
 
 .header__logo-box {
   position: relative;
-  padding-left: 4rem;
+  padding-left: 2rem;
   padding-top: 2rem;
 }
 
@@ -386,8 +386,8 @@ body {
 
 .navbar__links {
   float: right;
-  -webkit-transform: translate(-5rem, 2.5rem);
-          transform: translate(-5rem, 2.5rem);
+  -webkit-transform: translate(-3rem, 2.5rem);
+          transform: translate(-3rem, 2.5rem);
 }
 
 .navbar__link {
@@ -408,7 +408,7 @@ body {
 }
 
 .navbar__link:not(:last-child) {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .btn, .btn:visited, .btn:active {
@@ -626,8 +626,11 @@ body {
 
 @media only screen and (max-width: 600px) {
   .skills .row {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
+  }
+  .skills .row .col-1-of-4 {
+    width: 80%;
   }
 }
 

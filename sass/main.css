@@ -205,13 +205,10 @@ body {
   color: white;
 }
 
-<<<<<<< HEAD
 .title-heading--shadow {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-=======
->>>>>>> 5a5391919b9c89e3a743f36e267bf721a2227dcb
 .title-heading--color {
   background-image: -webkit-gradient(linear, left top, right top, from(#ffaf87), to(#fd7080));
   background-image: linear-gradient(to right, #ffaf87, #fd7080);
@@ -972,7 +969,6 @@ body {
   background-image: url(../images/diary2.jpg);
 }
 
-<<<<<<< HEAD
 .card__side--back-4 {
   background-image: url(../images/pomodoro.jpg);
 }
@@ -985,20 +981,21 @@ body {
   background-image: url(../images/etchsketch.jpg);
 }
 
-=======
->>>>>>> 5a5391919b9c89e3a743f36e267bf721a2227dcb
 .card__details {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 0.5rem;
   border-radius: 0.5rem;
-<<<<<<< HEAD
   margin-top: 1rem;
 }
 
 .card__details-5, .card__details-6 {
   padding-bottom: 3rem;
-=======
->>>>>>> 5a5391919b9c89e3a743f36e267bf721a2227dcb
+}
+
+.card__details {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .card:hover .card__side--front {
@@ -1009,6 +1006,50 @@ body {
 .card:hover .card__side--back {
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
+}
+
+@media only screen and (max-width: 1450px) {
+  .project-row {
+    -webkit-transform: translateX(6rem);
+            transform: translateX(6rem);
+  }
+  .project-row .col-1-of-3 {
+    width: 30rem !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .project-row {
+    width: 75% !important;
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+  .project-row .col-1-of-3 {
+    width: 48% !important;
+  }
+  .project-row .col-1-of-3:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-row {
+    -webkit-transform: translateX(12%);
+            transform: translateX(12%);
+  }
+  .project-row .col-1-of-3 {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project-row {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .project-row .col-1-of-3 {
+    width: 100% !important;
+  }
 }
 
 .row {

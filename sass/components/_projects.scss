@@ -90,7 +90,6 @@
 			&-3 {
 				background-image: url(../images/diary2.jpg);
 			}
-<<<<<<< HEAD
 			&-4 {
 				background-image: url(../images/pomodoro.jpg);
 			}
@@ -114,8 +113,6 @@
 		&-5,
 		&-6 {
 			padding-bottom: 3rem;
-=======
->>>>>>> 5a5391919b9c89e3a743f36e267bf721a2227dcb
 		}
 	}
 
@@ -132,5 +129,48 @@
 	&:hover &__side--back {
 		// Back card is already flipped
 		transform: rotateY(0); // Flips the card
+	}
+}
+
+@media only screen and (max-width: $huge-screen) {
+	.project-row {
+		transform: translateX(6rem);
+	}
+	.project-row .col-1-of-3 {
+		width: 30rem !important;
+	}
+}
+
+@media only screen and (max-width: $xl-screen) {
+	.project-row {
+		width: 75% !important;
+		transform: translateX(25%);
+	}
+
+	.project-row .col-1-of-3 {
+		width: 48% !important;
+
+		&:not(:last-child) {
+			margin-bottom: $gutter-vertical;
+		}
+	}
+}
+
+@media only screen and (max-width: $medium-screen) {
+	.project-row {
+		transform: translateX(12%);
+	}
+
+	.project-row .col-1-of-3 {
+		width: 80% !important;
+	}
+}
+
+@media only screen and (max-width: $small-screen) {
+	.project-row {
+		transform: translateX(0);
+	}
+	.project-row .col-1-of-3 {
+		width: 100% !important;
 	}
 }
